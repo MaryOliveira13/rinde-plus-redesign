@@ -18,16 +18,17 @@
    const pos=gl.getAttribLocation(program,'a_position');gl.enableVertexAttribArray(pos);gl.vertexAttribPointer(pos,2,gl.FLOAT,false,0,0);
    const resolution=gl.getUniformLocation(program,'u_resolution'),time=gl.getUniformLocation(program,'u_time'),dpr=gl.getUniformLocation(program,'u_dpr');
    section.prepend(canvas);
-   let frame=0,inView=false,elapsed=0,last=0;const motion=matchMedia('(prefers-reduced-motion: reduce)');
+   let frame=0,inView=false,elapsed=0,last=0,lastPaint=0;const motion=matchMedia('(prefers-reduced-motion: reduce)');
    const render=now=>{
     frame=0;if(!inView||document.hidden){last=0;return}
+    if(now-lastPaint<1000/24){frame=requestAnimationFrame(render);return}lastPaint=now;
     if(last&&!motion.matches)elapsed+=Math.min(now-last,100)*.00045;last=now;
     gl.uniform1f(time,elapsed);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
     if(!motion.matches)frame=requestAnimationFrame(render);
    };
    const request=()=>{if(!frame)frame=requestAnimationFrame(render)};
    const resize=()=>{
-    const box=section.getBoundingClientRect();const scale=Math.min(devicePixelRatio||1,1.5,Math.sqrt(1000000/Math.max(1,box.width*box.height)));
+    const box=section.getBoundingClientRect();const scale=Math.min(devicePixelRatio||1,1.5,Math.sqrt((innerWidth<768?120000:220000)/Math.max(1,box.width*box.height)));
     canvas.width=Math.max(1,Math.round(box.width*scale));canvas.height=Math.max(1,Math.round(box.height*scale));gl.viewport(0,0,canvas.width,canvas.height);gl.uniform2f(resolution,canvas.width,canvas.height);gl.uniform1f(dpr,scale);request();
    };
    new ResizeObserver(resize).observe(section);resize();

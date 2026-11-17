@@ -413,8 +413,9 @@ export function ShaderBackground({ className }: { className?: string }) {
     let bounds = canvas.getBoundingClientRect()
     let raf = 0
     let lastNow: number | null = null
+    let lastPaint = 0
     let visible = document.visibilityState === "visible"
-    let inView = true
+    let inView = false
     let disposed = false
     const start = performance.now()
     const motionScale = matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : UNIFORMS.timeScale
@@ -426,7 +427,7 @@ export function ShaderBackground({ className }: { className?: string }) {
       const rawHeight = Math.max(1, Math.round(bounds.height * dpr))
       const pixelScale = Math.min(
         1,
-        Math.sqrt(700_000 / Math.max(1, rawWidth * rawHeight)),
+        Math.sqrt((matchMedia("(max-width:767px)").matches ? 120_000 : 220_000) / Math.max(1, rawWidth * rawHeight)),
       )
       const width = Math.max(1, Math.round(rawWidth * pixelScale))
       const height = Math.max(1, Math.round(rawHeight * pixelScale))
@@ -520,6 +521,8 @@ export function ShaderBackground({ className }: { className?: string }) {
     function render(now: number) {
       raf = 0
       if (disposed || !visible || !inView) return
+      if (now - lastPaint < 1000 / 24) { requestRender(); return }
+      lastPaint = now
       const dt = lastNow === null ? 0 : Math.min((now - lastNow) / 1000, 0.1)
       lastNow = now
       const follow = 1 - Math.exp(-12 * dt)

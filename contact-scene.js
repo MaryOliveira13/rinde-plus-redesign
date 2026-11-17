@@ -1,7 +1,7 @@
 (()=>{
  const section=document.querySelector('#contacto');if(!section)return;
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
- const image=document.createElement('img');image.className='contact-parallax-image';image.loading='lazy';image.fetchPriority='low';image.src='./assets/contact-field.webp';image.alt='';image.setAttribute('aria-hidden','true');image.decoding='async';section.prepend(image);
+ const image=document.createElement('img');image.className='contact-parallax-image';image.loading='lazy';image.fetchPriority='low';image.srcset='./assets/contact-field-mobile.webp 760w, ./assets/contact-field.webp 1440w';image.sizes='100vw';image.src='./assets/contact-field.webp';image.alt='';image.setAttribute('aria-hidden','true');image.decoding='async';section.prepend(image);
  let frame=0,position=0;
  const render=()=>{
   frame=0;const r=section.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;

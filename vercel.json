@@ -5,9 +5,41 @@
   "buildCommand": "",
   "outputDirectory": ".",
   "rewrites": [
-    { "source": "/pt", "destination": "/index-pt.html" },
-    { "source": "/pt/", "destination": "/index-pt.html" },
-    { "source": "/en", "destination": "/index-en.html" },
-    { "source": "/en/", "destination": "/index-en.html" }
+    {
+      "source": "/pt",
+      "destination": "/index-pt.html"
+    },
+    {
+      "source": "/pt/",
+      "destination": "/index-pt.html"
+    },
+    {
+      "source": "/en",
+      "destination": "/index-en.html"
+    },
+    {
+      "source": "/en/",
+      "destination": "/index-en.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "value": "public, max-age=86400, stale-while-revalidate=604800",
+          "key": "Cache-Control"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "value": "public, max-age=31536000, immutable",
+          "key": "Cache-Control"
+        }
+      ]
+    }
   ]
 }

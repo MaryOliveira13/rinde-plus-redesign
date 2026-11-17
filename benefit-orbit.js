@@ -13,10 +13,10 @@
  const mount=()=>{
   const target=document.querySelector('#beneficios .benefit-map');if(!target||target.closest('astro-island')?.hasAttribute('ssr')||target.dataset.orbit)return;
   target.dataset.orbit='true';target.classList.add('reference-orbit');
-  if(!target.querySelector('.orbit-photo'))target.innerHTML='<img class="orbit-photo" src="./assets/orbit-field.webp" alt=""><img class="orbit-pie" src="./assets/orbit-pie.svg" alt=""><span class="orbit-leaf orbit-brand"><img src="./assets/rinde-r-icon.svg" alt=""></span><img class="orbit-bars" src="./assets/orbit-bars.svg" alt="">';
+  if(!target.querySelector('.orbit-photo'))target.innerHTML='<img class="orbit-photo" srcset="./assets/orbit-field-mobile.webp 760w, ./assets/orbit-field.webp 800w" sizes="(max-width:767px) 90vw, 460px" src="./assets/orbit-field.webp" alt=""><img class="orbit-pie" src="./assets/orbit-pie.svg" alt=""><span class="orbit-leaf orbit-brand"><img src="./assets/rinde-r-icon.svg" alt=""></span><img class="orbit-bars" src="./assets/orbit-bars.svg" alt="">';
   visual=target;photo=target.querySelector('.orbit-photo');
   const slider=target.closest('.rp-benefit-slider');
-  const images=['./assets/orbit-field.webp','./assets/soja-atardecer.CQTKi0dY.webp','./assets/girasol-tormenta.CZDsdYof.webp','./assets/cosecha-soja.DhaELixS.webp'];
+  const images=['./assets/orbit-field.webp','./assets/soja-atardecer.CQTKi0dY.webp','./assets/girasol-tormenta.CZDsdYof.webp','./assets/cosecha-soja.DhaELixS.webp'].map(p=>innerWidth<768?p.replace('.webp','-mobile.webp'):p);
   let current=-1,request=0;
   const syncImage=async()=>{
    const slides=[...slider.querySelectorAll('.rp-benefit-slider__slide')];
@@ -25,7 +25,7 @@
    const image=new Image();image.src=images[index];
    try{await image.decode()}catch{return}
    if(token!==request)return;
-   photo.src=images[index];
+   photo.removeAttribute('srcset');photo.src=images[index];
    if(!motion.matches&&target.classList.contains('orbit-arrived'))photo.animate([{opacity:.4},{opacity:1}],{duration:450,easing:'ease-out'});
   };
   new MutationObserver(syncImage).observe(slider.querySelector('.rp-benefit-slider__stage'),{subtree:true,attributes:true,attributeFilter:['class']});

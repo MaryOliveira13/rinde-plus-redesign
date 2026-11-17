@@ -5,5 +5,5 @@
   const shimmer=()=>import('./assets/optimized/shimmer-entry.js');
   if('requestIdleCallback'in window)requestIdleCallback(shimmer,{timeout:900});else setTimeout(shimmer,250);
  }
- import('./assets/optimized/mesh-entry.js');import('./topo-lines.js');
+ import('./assets/optimized/mesh-entry.js?v=light-2');import('./topo-lines.js?v=light-2');
 })();
