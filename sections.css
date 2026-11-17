@@ -1,0 +1,99 @@
+/* Motion references: 21st.dev Animated Tabs (kuratlielia) and Scroll Reveal (Cnippet).
+   Native adaptation preserves the site's original React interaction components. */
+.rp-fx-section{background:#eef0e9!important;color:#152e27!important;--gh-fg:#152e27;--gh-fg-muted:#34483f;--gh-fg-subtle:#45584e}
+.rp-fx__head{text-align:left!important;margin-bottom:40px!important}
+.rp-fx__title{color:#112f25!important;font-weight:600!important;margin-bottom:20px!important}
+.rp-fx__subtitle{margin-left:0!important;color:#3c5045!important;line-height:1.65!important}
+.rp-fx{display:flex!important;flex-direction:column!important;background:#fffef9!important;border:1px solid #bdcbbf!important;box-shadow:0 18px 55px #173c3410!important}
+.rp-fx__tabs{order:-1!important;display:flex!important;position:relative;isolation:isolate;background:#e1e7dc!important;padding:8px!important;gap:6px!important;border-bottom:1px solid #c1cdbf!important}
+.rp-fx__tab{flex:1;min-height:84px!important;border:0!important;border-radius:14px!important;color:#294335!important;position:relative;z-index:1;background:transparent!important;transition:color .3s ease!important}
+.rp-fx__tab.is-active{background:transparent!important;color:#fff!important}
+.rp-fx__tab:not(.is-active):hover{background:#ffffff70!important}
+.rp-fx__tab-num{opacity:1!important;color:#415f47!important;font-size:12px!important}
+.rp-fx__tab-tag{font-size:14px!important;font-weight:600!important;color:inherit!important}
+.rp-fx__tab.is-active .rp-fx__tab-num{color:#e8d579!important}
+.rp-fx__tab.is-active .rp-fx__tab-tag{color:#fff!important}
+.section-tab-selection{position:absolute;z-index:0;left:0;top:8px;bottom:8px;border-radius:14px;background:#14392d;box-shadow:0 5px 15px #16392d26;transition:transform .55s cubic-bezier(.2,.8,.2,1),width .55s cubic-bezier(.2,.8,.2,1);pointer-events:none}
+.rp-fx__body{padding:52px!important}.rp-fx__name{color:#15392c!important;font-weight:600!important}.rp-fx__desc,.rp-fx__bullets li{color:#34473c!important}
+.rp-fx__bullets{margin-top:24px!important;gap:12px!important}
+.rp-fx__bullets li{background:#f0f3eb;border-radius:9px;padding:12px 16px 12px 30px!important;font-size:15px!important}
+.rp-fx__bullets li::before{top:17px!important;left:14px!important;background:#486b37!important}
+.rp-fx__visual{border:1px solid #d0dbca!important;background:#e9efe2!important;padding:28px!important;color:#253b2d!important}
+.rp-fx__chart text{fill:#263f2e!important}.rp-fx__moment{color:#395442!important}
+.rp-home__section--field{height:auto!important;min-height:850px!important;max-height:none!important;background:#08251e!important;padding:80px var(--page-gutter)!important}
+.rp-fieldbg{opacity:.35!important}.rp-fieldbg::after{background:#06231d!important;opacity:.3!important}
+.rp-benefit-slider{position:relative;text-align:left!important;z-index:2;padding:40px!important;background:#08271ff2;border:1px solid #ffffff24;border-radius:28px;box-shadow:0 28px 90px #0003;overflow:hidden}
+.rp-benefit-slider__rotulo{text-align:left!important;margin:0!important;color:#e8d47c!important;letter-spacing:.16em!important;font-size:12px!important}
+.rp-benefit-slider__stage{margin:38px 0 28px!important;min-height:435px!important;width:100%!important;text-align:left!important;position:relative}
+.rp-benefit-slider__slide{text-align:left!important;padding:0!important}
+.rp-benefit-slider__title{font-size:clamp(40px,4.6vw,68px)!important;font-weight:600!important;line-height:1.08!important;letter-spacing:-.055em!important;max-width:58%!important;color:#fff!important;margin:0 0 26px!important;text-align:left!important;text-wrap:balance}
+.rp-benefit-slider__lead{color:#f0f4ec!important;font-size:20px!important;line-height:1.65!important;max-width:55%!important;margin:0 0 20px!important;text-align:left!important}
+.rp-benefit-slider__detail{color:#c9d7c9!important;font-size:16px!important;line-height:1.75!important;max-width:55%!important;margin:0!important;text-align:left!important}
+.benefit-map{position:absolute;right:4%;top:110px;width:33%;aspect-ratio:1;border-radius:28px;background:#173e30;border:1px solid #72977480;padding:18px;box-shadow:0 20px 65px #0004;transform:rotate(4deg);overflow:hidden;pointer-events:none}
+.benefit-map .rp-lote__map{display:block;width:100%;height:100%;max-height:none!important;filter:saturate(.7)}
+.benefit-map::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,#ffffff12,transparent 50%);border-radius:inherit}
+.rp-fieldbg__nav{display:flex!important;align-items:stretch!important;gap:10px!important;margin:0!important;width:100%;padding-top:26px;border-top:1px solid #ffffff26}
+.rp-fieldbg__dot{flex:1!important;width:auto!important;height:auto!important;min-height:72px!important;min-width:0;border-radius:12px!important;padding:14px 12px!important;background:#ffffff08!important;border:1px solid #ffffff30!important;color:#e3ebe0!important;position:relative;overflow:hidden;text-align:left;transition:background .35s,border-color .35s!important}
+.rp-fieldbg__dot:hover{background:#ffffff16!important}.rp-fieldbg__dot.is-active{background:#e5db9c!important;color:#0b2c20!important;border-color:#e5db9c!important}
+.benefit-nav-label{display:block;font-size:12px;line-height:1.45;font-weight:600;position:relative;z-index:2}.benefit-nav-label small{display:block;font-size:10px;opacity:.8;margin-bottom:4px;letter-spacing:.1em}
+.rp-fieldbg__dot .rp-fieldbg__bar{position:absolute!important;inset:auto 0 0!important;height:3px!important;width:100%!important;border-radius:0!important;background:#0b2c20!important;opacity:.5}
+.rp-fieldbg__arrow{background:#ffffff0d!important;color:white!important;border:1px solid #ffffff40!important;border-radius:12px!important;width:40px!important;min-width:40px!important;height:auto!important}
+.rp-impact__subtitle,.rp-impact__pista{color:#3c5142!important}.rp-impact__ind>span{color:#344c3c!important}.rp-install__subtitle,.rp-install__steps,.rp-install__step-text{color:#2e4437!important}
+.rp-install__title,.rp-install__name{color:#15392c!important}.rp-install__title-accent{color:#365b2e!important}
+.section-reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease-out,transform .65s cubic-bezier(.2,.7,.3,1)}.section-reveal.is-revealed{opacity:1;transform:translateY(0)}
+@media(max-width:900px){.rp-fx__tabs{overflow-x:auto!important;scrollbar-width:thin}.rp-fx__tab{flex:none!important;min-width:156px!important}.rp-fx__body{padding:28px!important}.rp-benefit-slider{padding:28px!important}.rp-benefit-slider__title{font-size:44px!important;max-width:100%!important}.rp-benefit-slider__lead,.rp-benefit-slider__detail{max-width:100%!important}.benefit-map{position:relative;right:auto;top:auto;width:150px;margin:10px 0 30px auto;aspect-ratio:1;padding:10px;border-radius:18px}.rp-benefit-slider__stage{min-height:460px!important;margin-top:30px!important}.rp-home__section--field{padding:48px 24px!important;min-height:0!important}.rp-fieldbg__nav{overflow-x:auto!important;padding-bottom:8px;scrollbar-width:thin;gap:8px!important}.rp-fieldbg__dot{flex:0 0 152px!important;min-height:76px!important}.rp-fieldbg__arrow{display:none!important}.rp-benefit-slider__lead{font-size:18px!important}.rp-fx__tabs{display:flex!important}.rp-fx__panels{overflow:visible!important}.rp-fx__panel{min-width:0!important}.rp-fx__panels{display:block!important}.rp-fx__panel:not(.is-active){display:none!important}.rp-fx__panel.is-active{display:block!important;width:100%!important;position:relative!important;transform:none!important;opacity:1!important;pointer-events:auto!important}.rp-fx__panel .rp-fx__body{display:flex!important;flex-direction:column!important}.rp-fx__visual{padding:20px!important;width:100%!important;margin-top:26px!important}}
+@media(prefers-reduced-motion:reduce){.section-reveal{opacity:1;transform:none;transition:none}.section-tab-selection{transition:none}}
+[data-rp-theme=dark] .rp-fx-section{background:#152e25!important}[data-rp-theme=dark] .rp-fx__title,[data-rp-theme=dark] .rp-fx__subtitle{color:#f0f3e9!important}[data-rp-theme=dark] .rp-fx{background:#fffef9!important}[data-rp-theme=dark] .rp-fx__tabs{background:#e1e7dc!important}[data-rp-theme=dark] .rp-fx__visual{background:#e9efe2!important}[data-rp-theme=dark] .rp-install__title,[data-rp-theme=dark] .rp-install__subtitle{color:#f0f3e9!important}[data-rp-theme=dark] .rp-install__card{background:#fffef9!important}
+
+html.page-scrolled .header.header{background:#102e29fa!important;backdrop-filter:blur(16px)!important;-webkit-backdrop-filter:blur(16px)!important}.rp-fx__tab::before{display:none!important}
+
+.rp-benefit-slider__stage{padding:0!important;align-content:start!important;align-items:start!important}@media(max-width:900px){.rp-benefit-slider__stage{min-height:420px!important}}
+
+/* Client logos: black silhouettes at rest, original artwork on hover. */
+.rp-home__hero-clientes .company-logo img{filter:brightness(0)!important;opacity:1!important;transform:scale(1);transition:filter .3s ease,transform .3s ease!important}.rp-home__hero-clientes .company-logo:hover img,.rp-home__hero-clientes .company-logo:focus-within img{filter:none!important;opacity:1!important;transform:scale(1.1)}@media(prefers-reduced-motion:reduce){.rp-home__hero-clientes .company-logo img{transition:none!important}}
+
+/* Larger client logos with tighter spacing. */
+.rp-home__hero-clientes .company-logo{margin:0 18px!important}.rp-home__hero-clientes .company-logo img{max-height:58px!important;height:calc(var(--alto-logo,46px) * 1.25)!important;width:auto!important}.rp-home__hero-clientes .carousel-track{gap:12px!important}
+
+/* Originally white/monochrome artwork stays black on the light strip. */
+.rp-home__hero-clientes .company-logo--mono:hover img,.rp-home__hero-clientes .company-logo--mono:focus-within img{filter:brightness(0)!important}
+
+/* Standalone floating client card, separated from the next page section. */
+.rp-home__hero{overflow:visible!important}.rp-home__hero-clientes{width:calc(100% - 2 * var(--page-gutter))!important;max-width:1400px!important;margin-left:auto!important;margin-right:auto!important;margin-bottom:0!important;border-radius:24px!important;border:1px solid #193c3014!important;background:#fffef9!important;box-shadow:0 12px 35px #102e2912!important;padding:30px 0!important;overflow:hidden;position:relative!important;z-index:5!important}.rp-impacto{padding-top:95px!important}.rp-home__hero{background:linear-gradient(to bottom,#112921 0%,#112921 calc(100% - 100px),#f6f5ef calc(100% - 100px),#f6f5ef 100%)!important}@media(max-width:700px){.rp-home__hero-clientes{width:calc(100% - 32px)!important;border-radius:20px!important;padding:24px 0!important}.rp-impacto{padding-top:65px!important}}
+
+/* Softer corners, smaller centered logos and inset edge fades. */
+.rp-home__hero-clientes{border-radius:28.8px!important;border:0!important}.rp-home__hero,.rp-home__hero-clientes .trusted-companies-section,.rp-home__hero-clientes .trusted-companies-container,.rp-home__hero-clientes .carousel-wrapper{border-bottom:0!important}.rp-home__hero-clientes .carousel-wrapper{width:84%!important;margin:0 auto!important;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 14%,#000 86%,transparent 100%)!important;mask-image:linear-gradient(90deg,transparent 0%,#000 14%,#000 86%,transparent 100%)!important}.rp-home__hero-clientes .carousel-track{align-items:center!important}.rp-home__hero-clientes .company-logo{display:flex!important;align-items:center!important;justify-content:center!important}.rp-home__hero-clientes .company-logo img{max-height:52.2px!important;height:calc(var(--alto-logo,46px) * 1.125)!important;object-fit:contain!important}@media(max-width:700px){.rp-home__hero-clientes{border-radius:24px!important}.rp-home__hero-clientes .carousel-wrapper{width:88%!important}}
+
+/* Additional 20% corner radius; remove the clipped full-width shadow seam below the card. */
+.rp-home__hero-clientes{border-radius:34.56px!important}.rp-impacto{box-shadow:none!important;clip-path:none!important;border-top:0!important}@media(max-width:700px){.rp-home__hero-clientes{border-radius:28.8px!important}}
+
+/* Reveal the client card as one unit, including its moving logos. */
+.rp-home__hero-clientes{animation:client-card-arrival 1.05s cubic-bezier(.16,1,.3,1) 1.35s both}@keyframes client-card-arrival{from{opacity:0;transform:translateY(28px);filter:blur(5px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}@media(prefers-reduced-motion:reduce){.rp-home__hero-clientes{animation:none!important}}
+
+html.impact-title-await .rp-impact__title{visibility:hidden!important}.rp-impact__title.impact-title-running{visibility:visible!important}@media(prefers-reduced-motion:reduce){html.impact-title-await .rp-impact__title{visibility:visible!important}}
+
+/* Scroll-triggered card arrival replaces the timed hero animation. */
+.rp-home__hero-clientes{animation:none!important}html.client-card-await .rp-home__hero-clientes{opacity:0;transform:translateY(30px);filter:blur(9px)}@media(prefers-reduced-motion:reduce){html.client-card-await .rp-home__hero-clientes{opacity:1;transform:none;filter:none}}
+
+/* 21st.dev Mesh Drift, adapted to forest, deep teal and muted olive. */
+.rp-fx-section{position:relative!important;isolation:isolate;background:radial-gradient(ellipse at 80% 25%,#3e4929,#153d32 48%,#081f1b)!important;overflow:hidden}.campaign-mesh{position:absolute;inset:0;z-index:0;pointer-events:none}.rp-fx-section::after{content:'';position:absolute;inset:0;z-index:1;background:#031b151c;pointer-events:none}.rp-fx-section .rp-fx__head,.rp-fx-section .rp-fx{position:relative;z-index:2}.rp-fx-section .rp-fx__title{color:#fff!important}.rp-fx-section .rp-fx__subtitle{color:#e3ece1!important}.rp-fx-section .rp-fx{box-shadow:0 24px 70px #0003!important}[data-rp-theme=dark] .rp-fx-section{background:#081f1b!important}
+
+@media(max-width:900px){.rp-fx__tab .rp-fx__tab-tag,.rp-fx__tab .rp-fx__tab-num{position:relative!important;width:auto!important;height:auto!important;clip:auto!important;clip-path:none!important;overflow:visible!important;white-space:normal!important;margin:0!important}.rp-fx__tabs{scrollbar-width:none!important}.rp-fx__tabs::-webkit-scrollbar{display:none}}
+
+/* Campaign tab labels: uppercase and centered. */
+.rp-fx__tab{justify-content:center!important;align-items:center!important;text-align:center!important;gap:10px!important}.rp-fx__tab-tag{text-transform:uppercase!important;text-align:center!important}.rp-fx__tab-num{text-align:center!important}
+
+/* Campaign tabs: vertically centered, left aligned. */
+.rp-fx__tab{justify-content:flex-start!important;align-items:center!important;text-align:left!important}.rp-fx__tab-tag,.rp-fx__tab-num{text-align:left!important}
+
+/* Keep the existing animated progress line at the bottom of the tab. */
+.rp-fx__tab-barra{top:auto!important;bottom:0!important;left:0!important;right:0!important;height:4px!important;border-radius:0 0 12px 12px!important}
+
+/* Align progress with the bottom edge of the shared tab strip, across its padding. */
+.rp-fx__tab{overflow:visible!important}.rp-fx__tab-barra{bottom:-8px!important;border-radius:0!important}
+
+/* Center the 4px progress stroke precisely over the strip's 1px lower border. */
+.rp-fx__tab-barra{bottom:-10.5px!important}
+
+/* Keep the brand-strip card fixed on desktop too; reveal individual logos only. */
+html.client-card-await .rp-home__hero-clientes,.rp-home__hero-clientes{opacity:1!important;transform:none!important;filter:none!important;animation:none!important}@media(prefers-reduced-motion:no-preference){.rp-home__hero-clientes .company-logo:not(.mobile-logo-revealed){opacity:0!important}}

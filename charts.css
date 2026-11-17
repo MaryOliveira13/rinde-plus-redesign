@@ -1,0 +1,56 @@
+/* Native SVG presentation inspired by 21st.dev Animated Bar Chart / Chart Line. */
+.rp-fx__visual{background:linear-gradient(145deg,#fffef9,#f0f4e9)!important;box-shadow:inset 0 1px 0 #fff,0 12px 28px #163e2910!important;border:1px solid #cad6c3!important;border-radius:24px!important;padding:30px 24px!important}
+.rp-fx__chart{width:100%!important;max-width:520px!important;overflow:visible;--fx-c1:#286044;--fx-c2:#9b7627;--fx-grid:#bbcbb7;--fx-dot-fill:#fffef9;color:#263c2e!important}
+.rp-fx__chart .fx-grid{stroke:#b6c7b2;opacity:.65}
+.rp-fx__chart .fx-label{font-size:7.3px;font-weight:600;letter-spacing:.05px}
+.rp-fx__chart .fx-caption{font-size:8px;font-weight:650;fill:#314c38!important}
+.rp-fx__chart .fx-s1{stroke:#286044;filter:drop-shadow(0 2px 2px #28604416)}
+.rp-fx__chart .fx-s2{stroke:#997522}.rp-fx__chart .fx-dot{fill:#fffef9;stroke-width:2}
+.rp-fx__chart .fx-stop-1{stop-color:#3c7c52}.rp-fx__chart .fx-stop-2{stop-color:#ba9b4e}
+.rp-fx__chart .fx-band-risk{fill:#b8614a}.rp-fx__chart .fx-band-warn{fill:#bb9442}.rp-fx__chart .fx-band-safe{fill:#4f895a}
+.chart-upgraded [class*="fx-a-"]{animation:none!important}
+.chart-upgraded rect.fx-f1,.chart-upgraded rect.fx-f-neutral{transition:filter .25s;cursor:default}
+.chart-upgraded rect.fx-f1:hover,.chart-upgraded rect.fx-f-neutral:hover{filter:brightness(1.13) drop-shadow(0 2px 2px #163e2920)}
+.chart-guide{stroke:#8ca589;stroke-width:.45;stroke-dasharray:1 4;opacity:.3;pointer-events:none}
+@media(max-width:700px){.rp-fx__visual{padding:22px 14px!important;border-radius:18px!important}.rp-fx__chart .fx-caption{font-size:7.8px}}
+
+@media(max-width:700px){.rp-fx__panel.is-active{padding:20px 0 24px!important}.rp-fx__panel .rp-fx__body{padding:0!important}.rp-fx__visual{min-height:260px!important}.rp-fx__chart{min-width:0!important}}
+
+/* Animated chart-card background using the supplied palette. */
+.rp-fx-section .rp-fx__visual{background:linear-gradient(125deg,#051f20 0%,#0b2b26 24%,#163b32 48%,#235347 68%,#8eb69b 88%,#daf1de 100%)!important;background-size:300% 300%!important;animation:chart-palette-drift 24s ease-in-out infinite!important;position:relative;isolation:isolate;border-color:#8eb69b60!important}.rp-fx__visual::before{content:'';position:absolute;inset:0;border-radius:inherit;background:#051f208c;z-index:0;pointer-events:none}.rp-fx__visual .rp-fx__chart{position:relative;z-index:1;--fx-dot-fill:#0b2b26;color:#daf1de!important}.rp-fx__visual .rp-fx__chart text,.rp-fx__visual .rp-fx__chart .fx-caption{fill:#daf1de!important}.rp-fx__visual .fx-s1{stroke:#b4dbc0!important}.rp-fx__visual .fx-s2{stroke:#e3ce91!important}.rp-fx__visual .fx-grid,.rp-fx__visual .chart-guide{stroke:#8eb69b!important}.rp-fx__visual .fx-dot{fill:#0b2b26!important}.rp-fx__visual .fx-stop-1{stop-color:#8eb69b!important}.rp-fx__visual .fx-stop-2{stop-color:#daf1de!important}@keyframes chart-palette-drift{0%,100%{background-position:15% 30%}50%{background-position:85% 70%}}@media(prefers-reduced-motion:reduce){.rp-fx-section .rp-fx__visual{animation:none!important}}
+
+/* Correct target: the larger card behind the individual chart cards. */
+.rp-fx-section .rp-fx{background:linear-gradient(125deg,#051f20 0%,#0b2b26 24%,#163b32 48%,#235347 68%,#8eb69b 88%,#daf1de 100%)!important;background-size:300% 300%!important;animation:chart-palette-drift 24s ease-in-out infinite;border-color:#8eb69b70!important}.rp-fx-section .rp-fx__name{color:#daf1de!important}.rp-fx-section .rp-fx__desc,.rp-fx-section .rp-fx__moment{color:#daf1de!important}.rp-fx-section .rp-fx__visual{background:linear-gradient(145deg,#fffef9,#f0f4e9)!important;background-size:auto!important;animation:none!important;border-color:#cad6c3!important}.rp-fx__visual::before{display:none!important}.rp-fx__visual .rp-fx__chart{--fx-dot-fill:#fffef9;color:#263c2e!important}.rp-fx__visual .rp-fx__chart text{fill:#263f2e!important}.rp-fx__visual .rp-fx__chart .fx-caption{fill:#314c38!important}.rp-fx__visual .fx-s1{stroke:#286044!important}.rp-fx__visual .fx-s2{stroke:#997522!important}.rp-fx__visual .fx-grid{stroke:#b6c7b2!important}.rp-fx__visual .chart-guide{stroke:#8ca589!important}.rp-fx__visual .fx-dot{fill:#fffef9!important}.rp-fx__visual .fx-stop-1{stop-color:#3c7c52!important}.rp-fx__visual .fx-stop-2{stop-color:#ba9b4e!important}@media(prefers-reduced-motion:reduce){.rp-fx-section .rp-fx{animation:none!important}}
+
+/* Gradient belongs ONLY to the gray strip containing the five campaign tabs. */
+.rp-fx-section .rp-fx{background:#fffef9!important;background-size:auto!important;animation:none!important;border-color:#bdcbbf!important}.rp-fx-section .rp-fx__name{color:#15392c!important}.rp-fx-section .rp-fx__desc{color:#34473c!important}.rp-fx-section .rp-fx__moment{color:#395442!important}.rp-fx-section .rp-fx__tabs{background:linear-gradient(125deg,#051f20 0%,#0b2b26 24%,#163b32 48%,#235347 68%,#8eb69b 88%,#daf1de 100%)!important;background-size:300% 300%!important;animation:chart-palette-drift 24s ease-in-out infinite!important;border-color:#8eb69b70!important}.rp-fx-section .rp-fx__tab{color:#daf1de!important}.rp-fx-section .rp-fx__tab-num{color:#c2ddbd!important}.rp-fx-section .rp-fx__tab:not(.is-active):hover{background:#ffffff15!important}.rp-fx-section .rp-fx__tab.is-active .rp-fx__tab-num{color:#e8d579!important}@media(prefers-reduced-motion:reduce){.rp-fx-section .rp-fx__tabs{animation:none!important}}
+
+/* White selection over the animated tab-strip gradient. */
+.rp-fx-section .section-tab-selection{background:#fffef9!important;box-shadow:0 5px 18px #0002!important}.rp-fx-section .rp-fx__tab.is-active,.rp-fx-section .rp-fx__tab.is-active .rp-fx__tab-tag{color:#15392c!important}.rp-fx-section .rp-fx__tab.is-active .rp-fx__tab-num{color:#41613d!important}
+
+/* Apply the supplied palette to each content panel shown in the reference. */
+.rp-fx-section .rp-fx__panel{background:linear-gradient(125deg,#051f20 0%,#0b2b26 24%,#163b32 48%,#235347 68%,#8eb69b 88%,#daf1de 100%)!important;background-size:300% 300%!important;animation:chart-palette-drift 24s ease-in-out infinite!important;border-radius:24px!important}.rp-fx-section .rp-fx__panel .rp-fx__name{color:#daf1de!important}.rp-fx-section .rp-fx__panel .rp-fx__desc,.rp-fx-section .rp-fx__panel .rp-fx__moment{color:#daf1de!important}.rp-fx-section .rp-fx__panel .rp-fx__bullets li{background:#f0f3eb!important;color:#34473c!important}@media(prefers-reduced-motion:reduce){.rp-fx-section .rp-fx__panel{animation:none!important}}
+
+/* Paint the whole content-card surface, not an inset panel. Preserve content dimensions. */
+.rp-fx-section .rp-fx__panels{background:linear-gradient(125deg,#051f20 0%,#0b2b26 24%,#163b32 48%,#235347 68%,#8eb69b 88%,#daf1de 100%)!important;background-size:300% 300%!important;animation:chart-palette-drift 24s ease-in-out infinite!important;align-self:stretch!important;width:100%!important;box-sizing:border-box!important;padding-bottom:40px!important;border-radius:0 0 24px 24px!important}.rp-fx-section .rp-fx{padding-bottom:0!important}.rp-fx-section .rp-fx__panel{background:transparent!important;animation:none!important;border-radius:0!important}@media(prefers-reduced-motion:reduce){.rp-fx-section .rp-fx__panels{animation:none!important}}
+
+/* Compact inset content card, rounded on every corner and separated from its white frame. */
+.rp-fx-section .rp-fx__panels{width:calc(100% - 32px)!important;align-self:center!important;margin:16px 16px 24px!important;border-radius:24px!important;padding:20px 24px 24px!important;box-sizing:border-box!important}.rp-fx-section .rp-fx__panel{padding-top:16px!important;padding-bottom:16px!important}.rp-fx-section .rp-fx__panel .rp-fx__body{padding:24px!important;min-height:0!important}.rp-fx-section .rp-fx{padding-bottom:0!important}@media(max-width:700px){.rp-fx-section .rp-fx__panels{width:calc(100% - 24px)!important;margin:12px 12px 20px!important;padding:18px!important;border-radius:20px!important}.rp-fx-section .rp-fx__panel .rp-fx__body{padding:0!important}}
+
+
+/* Explicit editorial line breaks for the requested campaign headings. */
+#rp-fx-panel-planificar .rp-fx__name,#rp-fx-panel-preparar .rp-fx__name,#rp-fx-panel-acompanar .rp-fx__name{white-space:pre-line!important;text-wrap:initial!important}@media(max-width:700px){#rp-fx-panel-planificar .rp-fx__name,#rp-fx-panel-preparar .rp-fx__name,#rp-fx-panel-acompanar .rp-fx__name{font-size:clamp(17px,5vw,26px)!important}}
+/* Align the chart card with the entire text column, including its heading. */
+@media(min-width:901px){.rp-fx-section .rp-fx__name{grid-area:1 / 1 / auto / 2!important}.rp-fx-section .rp-fx__visual{grid-area:1 / 2 / -1 / 3!important;align-self:stretch!important;margin-top:0!important;align-items:center!important}}
+
+/* Uniform progress color and slightly slimmer campaign tabs. */
+.rp-fx-section .rp-fx__tab-barra{background:#8cb7f3!important}.rp-fx-section .rp-fx__tab{height:72px!important;min-height:72px!important;padding-top:16px!important;padding-bottom:16px!important}@media(max-width:700px){.rp-fx-section .rp-fx__tab{height:68px!important;min-height:68px!important}}
+
+
+/* Transparent white contour lines, exactly 40% layer opacity. */
+.campaign-topo{position:absolute;inset:0;width:100%;height:100%;z-index:2;opacity:.4;pointer-events:none;background:transparent}.rp-fx-section .rp-fx__head,.rp-fx-section .rp-fx{z-index:3!important}
+
+.campaign-topo{opacity:.2!important}
+
+/* Same scroll-triggered word reveal used by the preceding section title. */
+html.campaign-title-await .rp-fx__title{visibility:hidden!important}.rp-fx__title.campaign-title-running{visibility:visible!important}@media(prefers-reduced-motion:reduce){html.campaign-title-await .rp-fx__title{visibility:visible!important}}

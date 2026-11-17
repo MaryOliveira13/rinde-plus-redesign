@@ -1,0 +1,145 @@
+/* Mobile-only adaptation. No declaration in this file applies above 767px. */
+@media(max-width:767px){
+ html{scroll-padding-top:82px}
+ body.rp-home{--page-gutter:20px;overflow-x:clip}
+ .header.header{padding:14px 0!important}.header .header-content{padding:0 20px!important;gap:10px!important;min-width:0}
+ .header .header-logo img{height:35px!important;max-width:125px!important}.header .header-actions{gap:8px!important}.header .header-login{width:42px!important;height:42px!important;min-width:42px!important;padding:10px!important}.header .hamburger-button{width:42px!important;height:42px!important}
+ .header .header-nav{top:60px!important}.header .header-nav--open{max-height:calc(100dvh - 85px)!important;padding:22px 20px!important;gap:8px!important;border-radius:0 0 20px 20px;box-shadow:0 16px 28px #0002}
+ .header .header-nav a.menu-item{font-size:16px!important;padding:10px 12px!important;min-height:44px;line-height:1.45!important}.header .header-nav__lang-opciones{border-radius:12px!important;padding:6px!important}.header .header-nav__lang-opcion{min-height:40px;display:grid;place-items:center}
+ .rp-home__hero-inner{min-height:850px!important;padding:485px 20px 60px!important;align-items:flex-end!important}
+ .rp-home__hero-text{width:100%!important;max-width:430px!important;--hero-subtitle-size:24px}
+ .rp-home__hero-title{font-size:36px!important;line-height:1.08!important;letter-spacing:-.045em!important;max-width:100%!important;margin-bottom:20px!important}
+ .rp-home__hero-subtitle{font-size:15px!important;line-height:1.6!important;max-width:100%!important}
+ .rp-home__hero-ctas{margin-top:24px!important;width:100%;gap:8px!important}.rp-home__hero-ctas .rp-home__hero-btn{font-size:11px!important;padding:13px 8px!important;min-height:46px!important;gap:5px!important}
+ .hero-wordmark{top:112px!important;left:3%!important;width:94%!important;font-size:13.2vw!important;line-height:1!important}
+ .hero-tractor{top:105px!important;left:calc(50% - 420px)!important;width:700px!important;height:397px!important;object-fit:contain!important}
+ .hero-landscape{object-position:60% center!important}.hero-shade{background:linear-gradient(0deg,#061c1bf5 0%,#061c1bd6 33%,transparent 68%)!important}
+ .rp-home__hero-clientes{min-height:138px!important;padding:23px 0!important;width:calc(100% - 32px)!important;margin-top:-24px!important;border-radius:28px!important}
+ .trusted-companies-title{font-size:10px!important;letter-spacing:.12em!important;margin-bottom:18px!important}.rp-home__hero-clientes .company-logo{height:52px!important;margin:0 12px!important;padding:0 3px!important}.rp-home__hero-clientes .company-logo img{height:calc(var(--alto-logo,46px) * .85)!important;max-height:44px!important}.rp-home__hero-clientes .carousel-track{gap:12px!important;padding:5px 0!important}
+ #impacto.rp-impacto{min-height:0!important;padding:52px 20px!important;scroll-margin-top:76px!important}
+ #impacto .rp-impact__title{font-size:35px!important;line-height:1.12!important;letter-spacing:-.045em!important;max-width:100%!important}
+ #impacto .rp-impact__subtitle{font-size:15px!important;line-height:1.6!important;margin-top:18px!important}
+ #impacto .rp-impact__head,#impacto .rp-impact__box,#impacto .rp-impact__pie{width:100%!important;max-width:100%!important}
+ #impacto .rp-impact__box{padding-top:24px!important}#impacto .rp-impact__inds{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px 0!important}
+ #impacto .rp-impact__ind{min-height:124px!important;padding:16px 12px!important;align-items:flex-start!important}#impacto .rp-impact__ind strong{font-size:28px!important;line-height:1.15!important;white-space:nowrap}#impacto .rp-impact__ind small{font-size:11px!important}#impacto .rp-impact__ind>span{font-size:12px!important;line-height:1.45!important}
+ #impacto .rp-impact__pista{font-size:11px!important;line-height:1.5!important;white-space:normal!important;margin-top:18px!important}#impacto .rp-impact__pie-linea{font-size:13px!important;line-height:1.5!important}#impacto .rp-impact__pie{margin-top:26px!important}
+ #impacto .rp-impact__panel-inner{max-width:100%;overflow-x:auto!important;border-radius:14px!important}#impacto .rp-impact__tabla{min-width:330px!important;font-size:11px!important}#impacto .rp-impact__tabla th,#impacto .rp-impact__tabla td{padding:8px 6px!important}
+ #funcionalidades.rp-fx-section{padding:54px 16px!important;scroll-margin-top:72px!important}
+ #funcionalidades .rp-fx__head{margin:0 4px 30px!important}#funcionalidades .rp-fx__title{font-size:36px!important;line-height:1.08!important;letter-spacing:-.045em!important}#funcionalidades .rp-fx__subtitle{font-size:16px!important;line-height:1.6!important;margin-top:18px!important}
+ #funcionalidades .rp-fx{border-radius:22px!important;padding:0!important;width:100%;overflow:hidden!important}
+ #funcionalidades .rp-fx__tabs{margin:0!important;padding:6px!important;gap:5px!important;width:100%!important;overflow-x:auto!important;scrollbar-width:none!important;overscroll-behavior-x:contain}
+ #funcionalidades .rp-fx__tab{height:62px!important;min-height:62px!important;min-width:140px!important;flex:0 0 140px!important;padding:12px!important;gap:7px!important;align-items:center!important;justify-content:flex-start!important}
+ #funcionalidades .rp-fx__tab-num{font-size:10px!important}#funcionalidades .rp-fx__tab-tag{font-size:11px!important;line-height:1.4!important;white-space:normal!important}
+ #funcionalidades .section-tab-selection{top:6px;bottom:6px;border-radius:12px}#funcionalidades .rp-fx__tab-barra{bottom:-8.5px!important;height:4px!important}
+ #funcionalidades .rp-fx__panels{width:calc(100% - 20px)!important;margin:10px 10px 14px!important;padding:20px 16px!important;border-radius:18px!important}
+ #funcionalidades .rp-fx__panel.is-active{width:100%!important;padding:0!important;display:flex!important;flex-direction:column!important;gap:0!important}
+ #funcionalidades .rp-fx__moment{font-size:12px!important;margin:0 0 12px!important}#funcionalidades .rp-fx__moment-num{font-size:19px!important}
+ #funcionalidades .rp-fx__panel .rp-fx__name{font-size:clamp(21px,6vw,27px)!important;line-height:1.15!important;letter-spacing:-.035em!important;max-width:100%!important;width:100%!important;margin-bottom:20px!important;overflow-wrap:break-word}
+ #funcionalidades .rp-fx__panel .rp-fx__body{display:flex!important;flex-direction:column!important;padding:0!important;min-height:0!important;gap:0!important}
+ #funcionalidades .rp-fx__desc{font-size:15px!important;line-height:1.6!important;margin:0!important}
+ #funcionalidades .rp-fx__bullets{margin:20px 0 0!important;gap:9px!important}#funcionalidades .rp-fx__bullets li{font-size:13px!important;line-height:1.5!important;padding:10px 12px 10px 25px!important}#funcionalidades .rp-fx__bullets li::before{left:12px!important;top:14px!important;height:12px!important;width:3px!important}
+ #funcionalidades .rp-fx__visual{width:100%!important;min-height:0!important;height:auto!important;margin-top:24px!important;padding:20px 12px!important;border-radius:16px!important;align-self:stretch!important}
+ #funcionalidades .rp-fx__chart{width:100%!important;max-width:none!important;height:auto!important;min-height:160px!important;aspect-ratio:200 / 130;display:block}#funcionalidades .rp-fx__chart .fx-caption{font-size:8px!important}
+ #beneficios.rp-home__section--field{padding:54px 20px!important;min-height:0!important;height:auto!important;overflow:hidden!important;scroll-margin-top:72px!important}
+ #beneficios .rp-benefit-slider{display:flex!important;flex-direction:column!important;width:100%!important;max-width:420px!important;margin:0 auto!important;padding:0!important;--benefit-text-width:100%;gap:0!important}
+ #beneficios .rp-benefit-slider__rotulo{order:1;font-size:13px!important;padding:11px 14px!important;border-radius:8px!important;max-width:100%!important;letter-spacing:.035em!important}
+ #beneficios .rp-benefit-slider__stage{order:2;width:100%!important;margin:26px 0 0!important;padding:0!important;min-height:0!important}
+ html[lang] #beneficios .rp-benefit-slider__slide:nth-child(n) .rp-benefit-slider__title{font-size:34px!important;line-height:1.1!important;letter-spacing:-.045em!important;width:100%!important;max-width:100%!important;white-space:pre-line!important;overflow-wrap:break-word!important;margin:0 0 20px!important}
+ html[lang] #beneficios .rp-benefit-slider__slide:nth-child(n) .rp-benefit-slider__lead{font-size:17px!important;line-height:1.6!important;width:100%!important;max-width:100%!important;margin:0 0 18px!important}
+ html[lang] #beneficios .rp-benefit-slider__slide:nth-child(n) .rp-benefit-slider__detail{font-size:14px!important;line-height:1.65!important;width:100%!important;max-width:100%!important;margin:0!important}
+ #beneficios .rp-fieldbg__nav{order:3;width:100%!important;max-width:100%!important;margin:24px 0 0!important;min-height:44px;gap:8px!important}#beneficios .rp-fieldbg__arrow{min-height:44px!important;width:32px!important;min-width:32px!important}
+ #beneficios .benefit-map.reference-orbit{order:4;position:relative!important;width:min(290px,90%)!important;max-width:100%;height:auto!important;aspect-ratio:1;top:auto!important;right:auto!important;margin:24px auto 35px!important;align-self:center!important}
+ #contacto.rp-home__cta{min-height:600px!important;padding:70px 20px!important;scroll-margin-top:72px!important}#contacto .rp-home__cta-panel{text-align:center!important;padding:0!important;max-width:430px!important}
+ #contacto .rp-home__cta-title{font-size:42px!important;line-height:1.08!important;letter-spacing:-.045em!important;max-width:100%!important;margin:0 auto!important}
+ #contacto .rp-home__cta-vision{font-size:17px!important;line-height:1.6!important;max-width:100%!important;margin:24px auto 28px!important}
+ #contacto .rp-home__cta-btn{font-size:14px!important;min-height:50px!important;padding:15px 22px!important;margin:0 auto!important}
+ #contacto .rp-home__cta-hint{font-size:clamp(8px,2.25vw,10px)!important;line-height:1.6!important;white-space:nowrap!important;max-width:100%!important;width:max-content!important;margin:17px auto 0!important;text-align:center!important}
+ #instalar.rp-install{padding:58px 20px!important;scroll-margin-top:72px!important}#instalar .rp-install__bg{opacity:.04!important}
+ #instalar .rp-install__title{font-size:clamp(21px,6.1vw,34px)!important;line-height:1.14!important;letter-spacing:-.04em!important;width:100%!important;max-width:100%!important}
+ #instalar .rp-install__subtitle{font-size:16px!important;line-height:1.6!important;max-width:100%!important;margin:22px auto 0!important}
+ #instalar .rp-install__grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:18px!important;margin-top:30px!important}
+ #instalar .rp-install__card{width:100%!important;padding:24px 20px!important;border-radius:20px!important}
+ #instalar .rp-install__top{padding-bottom:18px!important;margin-bottom:22px!important;gap:15px!important}#instalar .rp-install__icon{width:48px!important;height:48px!important;font-size:24px!important;border-radius:13px!important}#instalar .rp-install__name{font-size:26px!important}
+ #instalar .rp-install__steps{gap:18px!important;width:100%;padding:0!important;margin:0!important}#instalar .rp-install__steps li{grid-template-columns:26px minmax(0,1fr)!important;column-gap:12px!important}
+ #instalar .rp-install__steps li::before{width:26px!important;height:26px!important;font-size:9px!important}#instalar .rp-install__step-text{font-size:14px!important;line-height:1.6!important;grid-column:2!important;min-width:0!important}#instalar .rp-install__link{overflow-wrap:anywhere!important}
+ .rp-footer{padding:40px 20px 24px!important}.rp-footer__marca{display:flex!important;flex-direction:column!important;align-items:center!important;gap:26px!important}.rp-footer__logo{width:150px!important}.rp-footer__derecha{display:flex!important;flex-direction:column!important;align-items:center!important;gap:22px!important}.rp-footer__redes{justify-content:center!important;gap:12px!important;padding:0!important}.rp-footer__redes a{width:44px!important;height:44px!important}.rp-footer__legales{text-align:center!important}
+ .finale-wordmark{font-size:13vw!important;line-height:1.15!important;letter-spacing:-.07em!important;margin:32px 0 18px!important;padding-bottom:20px!important}.rp-footer__bottom{display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;gap:16px!important;padding-top:12px!important}.rp-footer__copyright,.rp-footer__creditos{font-size:10px!important;line-height:1.65!important;max-width:100%!important;margin:0!important}.rp-footer .concept-note{font-size:9px!important;line-height:1.6!important;max-width:100%!important}
+}
+@media(max-width:350px){
+ .rp-home__hero-title{font-size:32px!important}.rp-home__hero-ctas .rp-home__hero-btn{font-size:10px!important}
+ #beneficios .rp-benefit-slider__slide:nth-child(n) .rp-benefit-slider__title{font-size:30px!important}
+ #contacto .rp-home__cta-title{font-size:37px!important}
+}
+
+@media(max-width:350px){.rp-home__hero-ctas .rp-home__hero-btn{white-space:normal!important;text-align:center!important;line-height:1.3!important;min-height:50px!important}.rp-home__hero-ctas .rp-home__hero-btn svg{flex-shrink:0}}@media(max-width:767px){#impacto .rp-impact__caret{color:#476b4a!important;stroke:#476b4a!important}}
+
+@media(max-width:767px){#instalar .rp-install__steps li{padding:0!important;margin:0!important;min-width:0!important}}
+
+/* Mobile client strip: logos 30% smaller with room for 3–4 at a time. */
+@media(max-width:767px){.rp-home__hero-clientes .company-logo{height:38px!important;margin:0 7px!important;padding:0 2px!important}.rp-home__hero-clientes .company-logo img{height:calc(var(--alto-logo,46px) * .595)!important;max-height:30.8px!important}.rp-home__hero-clientes .carousel-track{gap:8px!important}}
+
+/* Mobile card stays fixed; only its logos receive entrance motion. */
+@media(max-width:767px){html.client-card-await .rp-home__hero-clientes,.rp-home__hero-clientes{opacity:1!important;transform:none!important;filter:none!important;animation:none!important}#impacto .rp-impact__ind strong{font-variant-numeric:tabular-nums}}
+
+/* Slightly larger mobile title for the platform section. */
+@media(max-width:767px){#funcionalidades .rp-fx__title{font-size:40px!important;line-height:1.08!important}}@media(max-width:350px){#funcionalidades .rp-fx__title{font-size:37px!important}}
+
+/* Hide logos from the very first paint, then reveal once on scroll without flashing. */
+@media(max-width:767px) and (prefers-reduced-motion:no-preference){.rp-home__hero-clientes .company-logo:not(.mobile-logo-revealed){opacity:0!important}}
+
+/* Mobile campaign: a single white content card, green chart card, no upper tab strip/frame. */
+@media(max-width:767px){#funcionalidades .rp-fx{background:#fff!important;border:0!important;box-shadow:none!important;border-radius:22px!important;padding:0!important}#funcionalidades .rp-fx__tabs,#funcionalidades .rp-fx__lado{display:none!important}#funcionalidades .rp-fx__panels{width:100%!important;margin:0!important;padding:24px 20px 12px!important;background:#fff!important;animation:none!important;border-radius:22px 22px 0 0!important}#funcionalidades .rp-fx__panel{background:transparent!important}#funcionalidades .rp-fx__panel .rp-fx__name{color:#15392c!important}#funcionalidades .rp-fx__panel .rp-fx__desc,#funcionalidades .rp-fx__panel .rp-fx__moment{color:#34473c!important}#funcionalidades .rp-fx__bullets li{background:#edf2e8!important;color:#34473c!important}#funcionalidades .rp-fx__visual{background:linear-gradient(135deg,#051f20,#0b2b26 45%,#235347)!important;border-color:#315b47!important;box-shadow:none!important}#funcionalidades .rp-fx__visual .rp-fx__chart text,#funcionalidades .rp-fx__visual .fx-caption{fill:#daf1de!important}#funcionalidades .rp-fx__visual .fx-s1{stroke:#b5dfbd!important}#funcionalidades .rp-fx__visual .fx-s2{stroke:#e8d187!important}#funcionalidades .rp-fx__visual .fx-grid,#funcionalidades .rp-fx__visual .chart-guide{stroke:#8eb69b!important}#funcionalidades .rp-fx__visual .fx-stop-1{stop-color:#8eb69b!important}#funcionalidades .rp-fx__visual .fx-stop-2{stop-color:#daf1de!important}#funcionalidades .rp-fx__visual .fx-dot{fill:#0b2b26!important}.mobile-campaign-controls{display:flex;justify-content:center;align-items:center;gap:20px;padding:6px 20px 18px;background:#fff;color:#315b40}.mobile-campaign-controls button{display:grid;place-items:center;width:44px;height:44px;border:1px solid #cdd9c9;border-radius:50%;background:#f3f6ee;color:#214d35;font-size:28px;cursor:pointer}.mobile-campaign-controls span{font:500 12px Inter,Arial,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.1em}.mobile-campaign-controls button:focus-visible{outline:2px solid #315b40;outline-offset:3px}}@media(min-width:768px){.mobile-campaign-controls{display:none!important}}
+
+@media(max-width:767px){#funcionalidades .rp-fx__visual [id$='-primary'] stop:first-child{stop-color:#daf1de!important}#funcionalidades .rp-fx__visual [id$='-primary'] stop:last-child{stop-color:#8eb69b!important}#funcionalidades .rp-fx__visual [id$='-neutral'] stop:first-child{stop-color:#c8dabc!important}#funcionalidades .rp-fx__visual [id$='-neutral'] stop:last-child{stop-color:#819d7d!important}}
+
+@media(max-width:767px){.mobile-campaign-controls{display:none!important}#funcionalidades .mobile-campaign-hint{display:block;align-self:flex-end;margin:0 18px 12px auto;background:transparent;border:0;padding:8px 10px;min-width:44px;min-height:44px;color:#315b40;font-size:25px;cursor:pointer;animation:campaign-swipe-hint 1.8s ease-in-out infinite}#funcionalidades .rp-fx__panels{will-change:translate,opacity}}@keyframes campaign-swipe-hint{0%,100%{translate:0 0}50%{translate:5px 0}}@media(min-width:768px){.mobile-campaign-hint{display:none!important}}@media(prefers-reduced-motion:reduce){.mobile-campaign-hint{animation:none!important}}
+
+/* Ten-second mobile carousel with a visible preview of the next card. */
+@media(max-width:767px){#funcionalidades .rp-fx{position:relative!important;width:calc(100% - 22px)!important;margin-right:22px!important;overflow:visible!important;align-self:flex-start!important}#funcionalidades .mobile-campaign-hint{display:none!important}.mobile-campaign-peek{position:absolute;left:calc(100% + 12px);top:0;width:100%;height:100%;overflow:hidden;border-radius:22px;background:#fff;pointer-events:none;padding:24px 20px;box-sizing:border-box}.mobile-peek-content{display:flex;flex-direction:column;gap:18px;opacity:1;visibility:visible;color:#34473c}.mobile-peek-content .rp-fx__name{font-size:24px!important;color:#15392c!important;line-height:1.15!important}.mobile-peek-content .rp-fx__desc{font-size:15px!important;color:#34473c!important}.mobile-peek-content .rp-fx__moment{font-size:12px!important}.mobile-peek-content .rp-fx__body{display:flex!important;flex-direction:column!important;padding:0!important;gap:20px!important}}@media(min-width:768px){.mobile-campaign-peek{display:none!important}}
+
+/* Rounded content card on all four corners; the next-card preview is tappable. */
+@media(max-width:767px){#funcionalidades .rp-fx__panels{border-radius:22px!important;touch-action:pan-y}.mobile-campaign-peek{border-radius:22px!important;pointer-events:auto!important;cursor:pointer;touch-action:pan-y}.mobile-campaign-peek:focus-visible{outline:2px solid #d6fb00;outline-offset:3px}#funcionalidades .rp-fx{touch-action:pan-y}}
+
+@media(max-width:767px){#funcionalidades .rp-fx{cursor:grab;touch-action:pan-y}#funcionalidades .rp-fx.is-mobile-dragging{cursor:grabbing;user-select:none;-webkit-user-select:none}#funcionalidades .rp-fx img{-webkit-user-drag:none}}
+
+/* Mobile benefits label in Rinde Plus blue; slide headings enlarged by 10%. */
+@media(max-width:767px){#beneficios .rp-benefit-slider__rotulo{background:#14398f!important;color:#fff!important}html[lang] #beneficios .rp-benefit-slider__slide:nth-child(n) .rp-benefit-slider__title{font-size:37.4px!important}}@media(max-width:350px){html[lang] #beneficios .rp-benefit-slider__slide:nth-child(n) .rp-benefit-slider__title{font-size:33px!important}}
+
+/* No fade or added transition when switching mobile campaign stages. */
+@media(max-width:767px){#funcionalidades .rp-fx__panel{transition:none!important;animation:none!important}}
+
+/* Installation heading: 40% larger on mobile, centered on both lines. */
+@media(max-width:767px){#instalar .rp-install__title{font-size:clamp(29.4px,8.54vw,47.6px)!important;line-height:1.12!important;text-align:center!important}#instalar .install-title-line,#instalar .rp-install__title-accent{white-space:normal!important;text-align:center!important;text-wrap:balance!important}}
+
+/* Soft green gradient for the mobile installation heading accent. */
+@media(max-width:767px){#instalar .rp-install__title .rp-install__title-accent{color:#74a76e!important;background:linear-gradient(100deg,#416f43 0%,#74a76e 50%,#a1c88e 100%)!important;background-clip:text!important;-webkit-background-clip:text!important;-webkit-text-fill-color:transparent!important}}
+
+/* No entrance or switching animation on the white campaign cards. */
+@media(max-width:767px){#funcionalidades .rp-fx,#funcionalidades .rp-fx__panels,#funcionalidades .rp-fx__panel{animation:none!important;transition:none!important;transform:none!important}}
+/* Mobile cards switch immediately; prevent the original React scroll carousel
+   from adding a second, smooth movement after the gesture. */
+@media(max-width:767px){
+ #funcionalidades .rp-fx__panels{display:block!important;overflow:hidden!important;scroll-snap-type:none!important;scroll-behavior:auto!important;scroll-padding:0!important}
+ #funcionalidades .rp-fx__panel{display:none!important}
+ #funcionalidades .rp-fx__panel.is-active{display:flex!important;width:100%!important;min-width:0!important}
+}
+/* Independent mobile slides; no shared white backing or cloned preview. */
+@media(max-width:767px){
+ #funcionalidades .rp-fx{width:100%!important;margin-right:0!important;background:transparent!important;border-radius:0!important;overflow:visible!important;touch-action:auto!important}
+ #funcionalidades .rp-fx__escenario{background:transparent!important;min-width:0!important;overflow:visible!important}
+ #funcionalidades .mobile-campaign-peek{display:none!important}
+ #funcionalidades .rp-fx__panels{display:flex!important;gap:12px!important;padding:0 22px 0 0!important;background:transparent!important;overflow-x:auto!important;scroll-snap-type:x mandatory!important;scroll-padding:0!important;touch-action:pan-x pan-y!important;border-radius:0!important;align-items:stretch!important;box-sizing:border-box!important}
+ #funcionalidades .rp-fx__panel,#funcionalidades .rp-fx__panel.is-active{display:flex!important;flex:0 0 100%!important;width:100%!important;min-width:0!important;box-sizing:border-box!important;padding:24px 20px 12px!important;background:#fff!important;border-radius:22px!important;opacity:1!important;visibility:visible!important;scroll-snap-align:start!important;scroll-snap-stop:always!important;translate:none!important;transform:none!important;transition:none!important;animation:none!important}
+}
+/* Extend the carousel viewport to the screen edge, without clipping the preview. */
+@media(max-width:767px){
+ #funcionalidades .rp-fx{width:calc(100% + 32px)!important;max-width:none!important;margin-left:-16px!important;margin-right:-16px!important}
+ #funcionalidades .rp-fx__panels{width:100%!important;padding:0 16px!important;scroll-padding-inline:16px!important}
+ #funcionalidades .rp-fx__panel,#funcionalidades .rp-fx__panel.is-active{flex-basis:calc(100% - 24px)!important;width:calc(100% - 24px)!important;pointer-events:auto!important}
+}
+@media(max-width:767px){
+ #funcionalidades.rp-fx-section{width:100%!important;box-sizing:border-box!important}
+ #funcionalidades .rp-fx{width:100vw!important}
+ #funcionalidades .rp-fx__panels{padding-right:0!important}
+}
+@media(max-width:767px){#funcionalidades .rp-fx__panel,#funcionalidades .rp-fx__panel.is-active{flex-basis:calc(100% - 48px)!important;width:calc(100% - 48px)!important}}

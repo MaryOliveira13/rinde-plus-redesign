@@ -1,0 +1,42 @@
+/* References: 21st.dev Large Name Footer and Awwwards /elements/footer/. */
+.rp-install{background:#f4f5ed!important;position:relative;isolation:isolate;padding:90px var(--page-gutter)!important;overflow:hidden}
+.rp-install__bg{opacity:.07!important;pointer-events:none}
+.rp-install__inner{max-width:1200px!important;position:relative}
+.rp-install__header{text-align:left!important;opacity:1!important;transform:none!important}
+.rp-install__title{font-size:clamp(42px,5.3vw,76px)!important;font-weight:650!important;line-height:1.08!important;letter-spacing:-.055em!important;color:#112f26!important;margin:0!important;max-width:1200px!important}
+.install-title-line,.rp-install__title-accent{display:block!important;white-space:nowrap!important}
+.rp-install__title-accent{color:#416b3d!important}
+.rp-install__subtitle{color:#354d3d!important;font-size:19px!important;line-height:1.6!important;max-width:620px!important;margin:26px 0 0!important}
+.rp-install__grid{gap:24px!important;margin-top:48px!important}
+.rp-install .rp-install__card{background:#112f26!important;border:1px solid #365443!important;border-radius:26px!important;box-shadow:0 12px 32px #0d302414!important;padding:36px!important;transition:transform .35s,border-color .35s!important}
+.rp-install__card:hover{transform:translateY(-4px);border-color:#a7be82!important}
+.rp-install .rp-install__top{padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid #ffffff26;gap:18px}
+.rp-install .rp-install__icon{background:#dce8c1!important;color:#143629!important;border:0!important;border-radius:16px!important;width:58px;height:58px;font-size:28px}
+.rp-install .rp-install__name{color:#fff!important;font-size:30px!important;letter-spacing:-.035em}
+.rp-install .rp-install__steps{counter-reset:install-step;gap:22px!important;color:#e9f0e3!important}
+.rp-install .rp-install__steps li{counter-increment:install-step;display:grid!important;grid-template-columns:30px minmax(0,1fr);column-gap:14px;align-items:start;position:relative}
+.rp-install .rp-install__steps li::before{content:counter(install-step,decimal-leading-zero);width:28px;height:28px;display:grid;place-items:center;background:#ffffff0c;border:1px solid #a8c29770;color:#dce8c1;border-radius:50%;font-size:10px;font-weight:600;line-height:1}
+.rp-install .rp-install__punto{display:none!important}
+.rp-install .rp-install__step-text{color:#e9f0e3!important;font-size:16px!important;line-height:1.6!important}
+.rp-install .rp-install__step-text strong{color:#fff!important;font-weight:650}
+.rp-install .rp-install__link{color:#e8d88d!important;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.rp-install .rp-install__inline-icon{color:#e8d88d!important}
+html.install-title-await .rp-install__title{visibility:hidden}.rp-install__title.install-title-running{visibility:visible!important}
+.rp-footer{position:relative;background:#091f19!important;padding:60px var(--page-gutter) 26px!important;border:0!important;overflow:hidden}
+.rp-footer__inner{max-width:1320px!important}.rp-footer__logo img{filter:brightness(0) invert(1);opacity:1}
+.rp-footer__legales a{color:#edf2e5!important}.rp-footer__redes{gap:12px!important}
+.rp-footer__redes a{display:grid;place-items:center;width:44px;height:44px;border:1px solid #ffffff45;border-radius:50%;color:#edf2e5!important;background:transparent;transition:background .25s,color .25s,transform .25s}
+.rp-footer__redes a:hover{background:#dce8c1;color:#112f26!important;transform:translateY(-3px)}
+.finale-wordmark{font-family:Inter,Arial,sans-serif;font-size:clamp(60px,13.8vw,220px);font-weight:850;line-height:1.05;letter-spacing:-.075em;white-space:nowrap;color:#dce8c1;text-align:center;margin:45px 0 28px;padding-bottom:10px;border-bottom:1px solid #ffffff25}
+.rp-footer__bottom{margin-top:0!important;padding-top:14px!important;border:0!important;gap:22px!important}
+.rp-footer__copyright,.rp-footer__creditos,.rp-footer__creditos a{color:#b9c9b9!important;font-size:11px!important;line-height:1.6!important}.rp-footer .concept-note{color:#a8bca9;font-size:10px;margin-top:18px}
+@media(max-width:700px){.rp-install{padding:65px 24px!important}.rp-install__title{font-size:clamp(22px,6.8vw,42px)!important}.rp-install__subtitle{font-size:16px!important}.rp-install .rp-install__card{padding:25px!important;border-radius:22px!important}.rp-install .rp-install__step-text{font-size:15px!important}.rp-install__grid{margin-top:32px!important}.rp-footer{padding:45px 24px 24px!important}.finale-wordmark{font-size:13.4vw;margin:35px 0 20px}.rp-footer__bottom{flex-direction:column!important;align-items:flex-start!important}}
+@media(prefers-reduced-motion:reduce){html.install-title-await .rp-install__title{visibility:visible}.rp-install__card,.rp-footer__redes a{transition:none!important}.rp-install__card:hover,.rp-footer__redes a:hover{transform:none!important}}
+
+.rp-install .rp-install__steps li::before{position:static!important;grid-column:1;grid-row:1;margin:0!important;transform:none!important}.rp-install .rp-install__step-text{grid-column:2!important;grid-row:1!important;width:auto!important;min-width:0!important}.rp-install .rp-install__steps li::after{display:none!important}.rp-install .rp-install__steps::before{display:none!important}
+
+/* Center the closing heading/subheading and use white instruction cards. */
+.rp-install__header{text-align:center!important}.rp-install__title{text-align:center!important;margin-left:auto!important;margin-right:auto!important}.rp-install__subtitle{text-align:center!important;margin-left:auto!important;margin-right:auto!important}.rp-install .rp-install__card{background:#fff!important;border-color:#cbd7c8!important}.rp-install .rp-install__top{border-bottom-color:#173c3426!important}.rp-install .rp-install__name{color:#15392c!important}.rp-install .rp-install__step-text,.rp-install .rp-install__steps{color:#344b3b!important}.rp-install .rp-install__step-text strong{color:#14392b!important}.rp-install .rp-install__link{color:#245b3b!important}.rp-install .rp-install__inline-icon{color:#315f3e!important}.rp-install .rp-install__steps li::before{background:#edf3e7!important;border-color:#b7ccb0!important;color:#2c5638!important}
+
+/* Independently center both title lines and apply the requested accent. */
+.rp-install__title .install-title-line,.rp-install__title .rp-install__title-accent{display:block!important;width:100%!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important}.rp-install__title .rp-install__title-accent{color:#d6fb00!important}

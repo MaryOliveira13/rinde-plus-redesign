@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@paper-design/shaders-react": "^0.0.82",
+    "esbuild": "^0.28.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "scripts": {
+    "preview": "node preview.mjs",
+    "build": "esbuild shimmer-entry.tsx mesh-entry.tsx --bundle --splitting --format=esm --minify --outdir=assets/optimized --entry-names=[name] --chunk-names=shared-[hash]",
+    "build:mesh": "npm run build"
+  }
+}
