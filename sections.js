@@ -45,4 +45,4 @@
 
 (()=>{const sync=()=>document.documentElement.classList.toggle('page-scrolled',scrollY>50);addEventListener('scroll',sync,{passive:true});sync()})();
 
-(()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){if(!(e.target.id==='funcionalidades'&&matchMedia('(max-width:767px)').matches))e.target.animate([{opacity:0,transform:'translateY(24px)'},{opacity:1,transform:'translateY(0)'}],{duration:650,easing:'ease-out'});io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.rp-fx-section,.rp-home__section--field,.rp-install__grid').forEach(e=>io.observe(e))})();
+(()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){if(e.target.id!=='funcionalidades')e.target.animate([{opacity:0,transform:'translateY(24px)'},{opacity:1,transform:'translateY(0)'}],{duration:650,easing:'ease-out'});io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.rp-fx-section,.rp-home__section--field,.rp-install__grid').forEach(e=>io.observe(e))})();

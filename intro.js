@@ -4,6 +4,8 @@
  const boot=()=>{
   const titleScript=document.querySelector('script[data-intro-src*="hero-title-reveal.js"]');
   if(titleScript){const script=document.createElement('script');script.src=titleScript.dataset.introSrc;titleScript.removeAttribute('data-intro-src');titleScript.after(script)}
+  const backgroundScript=document.querySelector('script[data-intro-src*="effect-loader.js"]');
+  if(backgroundScript){const script=document.createElement('script');script.src=backgroundScript.dataset.introSrc;backgroundScript.removeAttribute('data-intro-src');backgroundScript.after(script)}
   const lang=document.documentElement.lang;
   const overlay=document.createElement('div');overlay.className='site-intro';overlay.setAttribute('role','dialog');overlay.setAttribute('aria-label',lang.startsWith('pt')?'Introdução Rinde Plus':lang.startsWith('en')?'Rinde Plus introduction':'Introducción Rinde Plus');
   const video=document.createElement('video');video.muted=true;video.autoplay=true;video.playsInline=true;video.preload='auto';video.defaultPlaybackRate=1;video.playbackRate=1;video.src='./assets/brand-intro.mp4?v=faststart-2';video.setAttribute('aria-label','Rinde Plus');

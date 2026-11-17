@@ -6,7 +6,7 @@
   document.querySelectorAll('.rp-home__hero-clientes .company-logo:not(.mobile-logo-revealed)').forEach(e=>{
    if(e.closest('astro-island')?.hasAttribute('ssr'))return;
    e.classList.add('mobile-logo-revealed');e.style.removeProperty('opacity');
-   if(!reduced)e.animate([{opacity:0,translate:'0 18px',scale:'.92'},{opacity:1,translate:'0 0',scale:'1'}],{duration:425,delay:0,easing:'cubic-bezier(.16,1,.3,1)',fill:'both'});
+   if(!reduced)e.animate([{opacity:0,translate:'0 12px',filter:'blur(3px)'},{opacity:1,translate:'0 0',filter:'blur(0px)'}],{duration:600,delay:0,easing:'cubic-bezier(.22,.61,.36,1)',fill:'both'});
   });
  };
  const onScroll=()=>{if(document.documentElement.classList.contains('intro-active')||scrollY<=2)return;triggered=true;reveal()};

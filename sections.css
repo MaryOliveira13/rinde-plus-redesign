@@ -97,3 +97,5 @@ html.impact-title-await .rp-impact__title{visibility:hidden!important}.rp-impact
 
 /* Keep the brand-strip card fixed on desktop too; reveal individual logos only. */
 html.client-card-await .rp-home__hero-clientes,.rp-home__hero-clientes{opacity:1!important;transform:none!important;filter:none!important;animation:none!important}@media(prefers-reduced-motion:no-preference){.rp-home__hero-clientes .company-logo:not(.mobile-logo-revealed){opacity:0!important}}
+/* The section background is persistent; arrival belongs to foreground content. */
+#funcionalidades.rp-fx-section{opacity:1!important;transform:none!important;animation:none!important;transition:none!important}
