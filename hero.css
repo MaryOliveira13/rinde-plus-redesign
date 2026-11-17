@@ -76,3 +76,5 @@
 
 /* Restore the original parallax strength and direct scroll response. */
 .hero-landscape{translate:0 calc(var(--parallax-scroll,0px) * .16);transition:none!important}.hero-tractor{translate:0 calc(var(--parallax-scroll,0px) * .065);transition:none!important}.hero-wordmark{--parallax-name-y:calc(var(--parallax-scroll,0px) * .24)}.shimmer-wordmark{transition:none!important}
+/* Keep the original heading hidden until its animated words are prepared. */
+html.hero-title-await .rp-home__hero-title{opacity:0!important}

@@ -10,7 +10,8 @@
   line.textContent.split(/(\s+)/).forEach(word=>{
    if(/^\s+$/.test(word)){fragment.append(document.createTextNode(word));return}
    const span=document.createElement('span');span.className='hero-reveal-word';
-   span.textContent=word;span.style.setProperty('--word-delay',`${.2+index++*(.05/1.2)}s`);fragment.append(span);
+   span.textContent=word;span.style.setProperty('--word-delay',`${index++*(.05/1.2)}s`);fragment.append(span);
   });line.replaceChildren(fragment);
  });
+ document.documentElement.classList.remove('hero-title-await');
 })();
